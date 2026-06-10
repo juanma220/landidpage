@@ -116,6 +116,14 @@ h4 {
     color: rgb(150, 127, 1)
 
 }
+.video video{
+    display: flex;
+            justify-content: center;
+            margin-top: 30px;
+    width: 1300px;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 3px solid #cca01a;
  body {
             background-color: #000000;
             font-family: 'Arial Black', 'Arial Bold', sans-serif;
@@ -126,6 +134,34 @@ h4 {
             padding: 40px 20px;
             margin: 0;
         }
+        .consolas{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border: 3px solid #cca01a;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+        .consolas img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+        }
+        .consolas-title {
+            color: #8c7323;
+            font-size: 1.4rem;
+            margin-top: 55px;
+            margin-bottom: 0;
+            margin-left: 20px;
+            text-align: center;
+        }
+        .imagenjuego{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            border: 3px solid #cca01a;
 
         .card {
             width: 100%;
