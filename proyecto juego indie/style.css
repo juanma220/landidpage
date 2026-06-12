@@ -27,7 +27,7 @@
 }
 
 .navbar{
-    background:linear-gradient(90deg,blue,rgb(0, 30, 255),rgb(0, 128, 255),rgb(0, 119, 128),rgb(0, 124, 128),rgb(0, 128, 105) ,rgb(0, 128, 83),rgb(0, 128, 66),green );
+    background:linear-gradient(90deg,blue,rgb(0,30, 255),rgb(0, 100, 255),rgb(0, 128, 255),rgb(0, 119, 128),rgb(0, 124, 128),rgb(0, 128, 105) ,rgb(0, 128, 83),rgb(0, 128, 66),green );
     position: fixed;
     top: 0;
     left: 0;
