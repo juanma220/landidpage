@@ -3,10 +3,11 @@
   margin: 0;
   padding: 0;
 }
-.Loogo{
-    width: 180px;
+
+.Loogo {
+    width: auto;
     height: 50px;
-    padding: 10px 400px 10px 40px;
+    padding: 10px 20px 10px 40px; 
     display: flex;
     align-items: center;
 }
@@ -24,22 +25,134 @@
     align-items: center;
     gap: 28px;
     width: 100%;
+    flex-wrap: wrap; 
 }
 
-.navbar{
-    background:linear-gradient(90deg,blue,rgb(0,30, 255),rgb(0, 100, 255),rgb(0, 128, 255),rgb(0, 119, 128),rgb(0, 124, 128),rgb(0, 128, 105) ,rgb(0, 128, 83),rgb(0, 128, 66),green );
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar {
+    background: linear-gradient(90deg, blue, rgb(0,30,255), rgb(0,100,255), rgb(0,128,255), rgb(0,119,128), rgb(0,124,128), rgb(0,128,105), rgb(0,128,83), rgb(0,128,66), green);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    width: 110%;
+    width: 100%; 
     display: flex;
     align-items: center;
     flex-direction: row;
     gap: 29px;
     z-index: 1030;
-    background-color:rgb(235,235,235) ;
 }
+
+body {
+    background-color: #000000;
+    font-family: 'Arial Black', 'Arial Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 100px 20px 40px 20px; 
+    margin: 0;
+}
+
+
+.imagenjuego {
+    display: flex;
+    justify-content: center;
+    padding: 20px; 
+    border: 3px solid #cca01a;
+    width: 100%;
+}
+
+.imagenjuego img {
+    max-width: 100%;
+    height: auto;
+}
+
+.video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.video video {
+    width: 100%;
+    max-width: 1300px;
+    border-radius: 10px;
+    border: 3px solid #cca01a;
+    margin-top: 10px;
+}
+
+/* ── CONSOLAS ── */
+.consolas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 20px;
+    border: 3px solid #cca01a;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    width: 100%;
+}
+
+.consolas img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.consolas-title {
+    color: #8c7323;
+    font-size: 1.4rem;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+/* ── CARDS ── */
+.card {
+    width: 100%;
+    max-width: 450px;
+    border: 3px solid #cca01a;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    background-color: #1c1105;
+    padding: 25px;
+    text-align: center;
+}
+
+.card-title {
+    color: #8c7323;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
 
 footer {
     background-color: rgb(8, 3, 0);
@@ -48,10 +161,8 @@ footer {
     text-align: center;
     border: 2px solid rgba(156, 142, 17, 0.719);
     padding: 30px;
-    
+    width: 100%;
 }
-
-
 
 .participantes {
     display: flex;
@@ -62,7 +173,6 @@ footer {
     margin: 10px auto;
 }
 
-
 .participantes img {
     width: 80px;
     height: 80px;
@@ -71,19 +181,17 @@ footer {
     border: 2px solid white;
 }
 
-    .participantes img:hover {
-        transform: scale(1.1);
-        transition: 0.3s;
-    }
+.participantes img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
 
 .arriba {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
     margin-top: 15px;
-    flex-direction: column;
 }
-
 
 .preguntas {
     width: 250px;
@@ -94,107 +202,79 @@ footer {
     text-align: center;
 }
 
-
 .preguntas:hover {
-        transform: scale(1.05);
-        transition: 0.5s;
-    }
-
+    transform: scale(1.05);
+    transition: 0.5s;
+}
 
 .flex {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    flex-wrap: wrap; 
 }
 
 h4 {
     color: rgb(150, 127, 1);
-
 }
-.video video{
-    display: flex;
-            justify-content: center;
-            margin-top: 30px;
-    width: 1300px;
-    max-width: 100%;
-    border-radius: 10px;
-    border: 3px solid #cca01a;
+
+
+@media (max-width: 600px) {
+
+    .Loogo {
+        padding: 10px 15px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .imagenjuego {
+        padding: 10px;
+    }
+
+    .consolas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .consolas img {
+        width: 150px;
+        height: 110px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .card-img {
+        height: 180px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .participantes {
+        gap: 25px 50px;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .preguntas {
+        width: 90%;
+    }
+
+    .arriba img {
+        width: 120px;
+        height: 120px;
+    }
 }
- body {
-            background-color: #000000;
-            font-family: 'Arial Black', 'Arial Bold', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
-            padding: 40px 20px;
-            margin: 0;
-        }
-        .consolas{
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            border: 3px solid #cca01a;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-        }
-        .consolas img {
-            width: 200px;
-            height: 150px;
-            object-fit: cover;
-            display: block;
-        }
-        .consolas-title {
-            color: #8c7323;
-            font-size: 1.4rem;
-            margin-top: 55px;
-            margin-bottom: 0;
-            margin-left: 20px;
-            text-align: center;
-        }
-        .imagenjuego{
-            display: flex;
-            justify-content: center;
-            padding: 100px;
-            border: 3px solid #cca01a;
-}
-        .card {
-            width: 100%;
-            max-width: 450px;
-            border: 3px solid #cca01a;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-        }
-
-
-        .card-img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            display: block;
-        }
-
-
-        .card-content {
-            background-color: #1c1105;
-            padding: 25px;
-            text-align: center;
-        }
-
-
-        .card-title {
-            color: #8c7323;
-            font-size: 1.4rem;
-            margin-top: 0;
-            margin-bottom: 15px;
-        }
-
-        .card-text {
-            color: #ffffff;
-            font-size: 1.1rem;
-            line-height: 1.5;
-            margin: 0;
-        }
